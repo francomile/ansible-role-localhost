@@ -1,0 +1,10 @@
+---
+- name: "Localhost | Create loopback alias address: {{ localhost_alias_ip }}"
+  ansible.builtin.template:
+    src: "02-lo.yaml.j2"
+    dest: "/etc/netplan/02-lo.yaml"
+    owner: root
+    group: root
+    mode: '0644'
+  notify:
+    - "Apply netplan"

@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  role_name: localhost
+  author: "Rubens Franco"
+  description: "Create localhost alias with netplan"
+  license: "GNU GENERAL PUBLIC LICENSE v2"
+  min_ansible_version: 2.9
+  platforms:
+    - name: Ubuntu
+      versions:
+        - "jammy"
+        - "focal"
+        - "bionic"
+    - name: Debian
+      versions:
+        - "bullseye"
+        - "buster"
+  galaxy_tags:
+    - netplan
+    - localhost-alias
+    - networking
+dependencies: []
